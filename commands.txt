@@ -1,83 +1,86 @@
+awal shi men search fta7et git cmd
 cd downloads
-# Changes the directory to "downloads"
+# cd fawatetna aa folder aw file hon fawatetna aa downloads
+3melt git --v l et2akad eno mwjoud w shu l version
+git status l shuf l 7ele l mwjoud fiya hl2
 
 mkdir libanux-website
-# Creates a new folder named "libanux-website"
+# mkdir bensho2 folder
 
 cd libanux-website
-# Enters the "libanux-website" directory
+# cd fawatna 3leh
 
 git init
-# Initializes a new Git repository in the current directory
+# bi 7awel aya folder aade l mashrou3 git
 
 notepad README.md
-# Opens Notepad to create or edit the README.md file
+# 3emel file README.md w fta7 notepad htta eza bdna nektob bi albo shi(ftashet 3a shi byeshbh nano bs 3a windows, ken fine sewi men 5ilel touch bt3ml create file)
 
 notepad index.html
-# Opens Notepad to create or edit the index.html file
+# nfes shi mtl README.md
 
 git add .
-# Adds all files in the current directory to the staging area
+# bzid kel malefet l m3adale 
 
 git commit -m "chore: initial website structure with README and index.html"
-# Commits the staged files with a message describing the changes
+# byo7faz l te3dilet w fina nktob bi albo mtl comments shu li t8ayar
 
 git config --global user.name "Khadija"
-# Sets the Git global username to "Khadija"
+# 7atet hon username lal git aande
 
 git config --global user.email "khadija@example.com"
-# Sets the Git global email to "khadija@example.com"
+# hatet email lal git 3nde 
 
 git config --list
-# Shows the current Git configuration settings
+# bi arjina Git configuration settings l 7eliye
 
 git remote add origin https://github.com/KhadijaShames/libanux-website-git-github-task.git
-# Links the local repository to a remote repository on GitHub
+# hatda link a5adne lama 3mlna create new bi github w men 5ilelo fina nfta7 3leh lal projet
 
 git branch -M main
-# Renames the current branch to "main"
+# samayna l current branch main
 
 git push -u origin main
-# Pushes the committed code to the "main" branch on GitHub and sets upstream tracking
+# push mnesta3melo wa2et bdna tzid l codet 3ala brach main bi aleb github 
 
 notepad commands.txt
-# Opens Notepad to create or edit the commands.txt file
+# rje3et 3melet file
 
 notepad libanux.html
-# Opens Notepad to create or edit the libanux.html file
+# rje3et 3melet file
 
 git add libanux.html
-# Adds libanux.html to the staging area
+# hon m sta3malna . l2an bdna bs file wa7ad fa 7atayna essmo
 
 git commit -m "feat: add libanux.html with logo and company name"
-# Commits the added libanux.html file with a message
+# byo7faz l te3dilet w fina nktob bi albo mtl comments shu li t8ayar
 
 git push origin main
-# Pushes the latest commit to the main branch on GitHub
+# zed l update aala brach l asese main bi guthub
 
 git pull origin main
-# Fetches and merges changes from the remote "main" branch into your local branch
+# hon sta3malta l2an 8yaret bel readme men github bas fta7etle saf7a tnye fa rje3et sta3malta m3 --no-edit
 
 git pull origin main --no-edit
-# Pulls from the remote "main" branch and uses the default merge message (no edit)
+# bjibon men main l yendamaj m3 holik
 
 git push origin main
-# Pushes the merged changes to the remote repository again
+# mnesta3melo wa2et bdna tzid l codet 3ala brach main bi aleb github
 
 git add logo.png
-# Stages the logo image file to be included in the next commit.
+# jhazet soura htta yzida 3a github
 
 git commit -m "add: logo image for libanux website"
-# Commits the added logo image with a descriptive message.
+# by3ml added l logo m3 comment shu hyda 
 
 git push origin main
-# Pushes the new commit (with the image) to the GitHub repository on the main branch.
+# mnesta3melo wa2et bdna tzid l codet 3ala brach main bi aleb github
 
 git add commands.txt
-# Stages the commands.txt file which contains the log of all Git commands used.
+# jahazle file commands.txt 7tta zido
 
 git commit -m "docs: add commands.txt with Git command history"
-# Commits the updated commands.txt file with a message indicating it's documentation.
+# 3emele added l file w katabet comment 7tta a3ref shu update
 
 git push origin main
-# Pushes the updated commands.txt to the GitHub repository on the main branch.
+# zeton 3a github men 5ilel git push
