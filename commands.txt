@@ -1,86 +1,67 @@
-awal shi men search fta7et git cmd
-cd downloads
-# cd fawatetna aa folder aw file hon fawatetna aa downloads
-3melt git --v l et2akad eno mwjoud w shu l version
-git status l shuf l 7ele l mwjoud fiya hl2
+First , i opened the search and wrote: git cmd
 
-mkdir libanux-website
-# mkdir bensho2 folder
+#cd downloads => is used to change the current directory to a folder named "downloads"
 
-cd libanux-website
-# cd fawatna 3leh
+#git --v => to make sure it exists and what its version are
 
-git init
-# bi 7awel aya folder aade l mashrou3 git
+#git status => to know the condition he is in now
 
-notepad README.md
-# 3emel file README.md w fta7 notepad htta eza bdna nektob bi albo shi(ftashet 3a shi byeshbh nano bs 3a windows, ken fine sewi men 5ilel touch bt3ml create file)
+#mkdir libanux-website => to create a folder
 
-notepad index.html
-# nfes shi mtl README.md
+#cd libanux-website => we have entered the file
 
-git add .
-# bzid kel malefet l m3adale 
+#git init => the command git init converts any regular folder into a Git project
 
-git commit -m "chore: initial website structure with README and index.html"
-# byo7faz l te3dilet w fina nktob bi albo mtl comments shu li t8ayar
+#notepad README.md => you can create a file and open it in Notepad to write or add whatever you want inside ( searched for something similar to nano but for Windows, i could also create it using the touch command)
 
-git config --global user.name "Khadija"
-# 7atet hon username lal git aande
+#notepad index.html => i created another file 
 
-git config --global user.email "khadija@example.com"
-# hatet email lal git 3nde 
+#git add . => this will add the files in the current directory(and subdirectories) to the staging area
 
-git config --list
-# bi arjina Git configuration settings l 7eliye
+#git commit -m "chore: initial website structure with README and index.html" => to commit the changes you've added to the staging area with the message description
 
-git remote add origin https://github.com/KhadijaShames/libanux-website-git-github-task.git
-# hatda link a5adne lama 3mlna create new bi github w men 5ilelo fina nfta7 3leh lal projet
+#git config --global user.name "Khadija" => set or change the username 
 
-git branch -M main
-# samayna l current branch main
+#git config --global user.email "khadija@example.com" => set or change the email
 
-git push -u origin main
-# push mnesta3melo wa2et bdna tzid l codet 3ala brach main bi aleb github 
+#git config --list => the command displays all the configuration settings for Git, including user information, editor settings, and other configurations that have been set either globally or locally for the repository
 
-notepad commands.txt
-# rje3et 3melet file
+#git remote add origin https://github.com/KhadijaShames/libanux-website-git-github-task.gi => the command is used to link your local Git repository to a remote repository (e.g., on GitHub, GitLab, or Bitbucket)
+Here’s the translation of your Git commands and explanations in English:
 
-notepad libanux.html
-# rje3et 3melet file
+#git branch -M main => renamed the current branch to main
 
-git add libanux.html
-# hon m sta3malna . l2an bdna bs file wa7ad fa 7atayna essmo
+#git push -u origin main => used when you want to push to the main branch on GitHub for the first time.
 
-git commit -m "feat: add libanux.html with logo and company name"
-# byo7faz l te3dilet w fina nktob bi albo mtl comments shu li t8ayar
+#notepad commands.txt => created a file named commands.txt in Notepad 
 
-git push origin main
-# zed l update aala brach l asese main bi guthub
+#notepad libanux.html => created a file named libanux.html in Notepad
 
-git pull origin main
-# hon sta3malta l2an 8yaret bel readme men github bas fta7etle saf7a tnye fa rje3et sta3malta m3 --no-edit
+#git add libanux.html => instead of using ., we specify the exact file (libanux.html) because we only want to add this specific file
 
-git pull origin main --no-edit
-# bjibon men main l yendamaj m3 holik
+#git commit -m "feat: add libanux.html with logo and company name" => saves the changes with a message describing the modification (adding libanux.html with a logo and company name).
 
-git push origin main
-# mnesta3melo wa2et bdna tzid l codet 3ala brach main bi aleb github
+#git push origin main => used to push changes to the main branch on GitHub
 
-git add logo.png
-# jhazet soura htta yzida 3a github
+#git pull origin main => pulled the latest changes from GitHub (for example, changes made to the README file). If a conflict arises, it opened another page, and you resolved it using the next command
 
-git commit -m "add: logo image for libanux website"
-# by3ml added l logo m3 comment shu hyda 
+#git pull origin main --no-edit => this command is used when pulling from main and merging changes without editing the commit message
 
-git push origin main
-# mnesta3melo wa2et bdna tzid l codet 3ala brach main bi aleb github
+#git push origin main => again, used to push changes to the main branch on GitHub
 
-git add commands.txt
-# jahazle file commands.txt 7tta zido
+#git add logo.png => added the logo.png file to be tracked by Git
 
-git commit -m "docs: add commands.txt with Git command history"
-# 3emele added l file w katabet comment 7tta a3ref shu update
+#git commit -m "add: logo image for libanux website" => committed the addition of the logo image with a descriptive message
 
-git push origin main
-# zeton 3a github men 5ilel git push
+#git push origin main => pushed the changes, including the new logo image, to the main branch on GitHub
+
+#git add commands.txt => added the commands.txt file to be tracked by Git
+
+#git commit -m "docs: add commands.txt with Git command history" => Committed the addition of the commands.txt file with a comment describing its content (Git command history)
+
+#git push origin main => pushed the commands.txt file update to the main branch on GitHub
+
+
+
+
+This sequence summarizes the entire process of working with files and committing them to Git, followed by pushing and pulling changes from the remote repository.
