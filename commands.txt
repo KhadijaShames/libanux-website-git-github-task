@@ -63,3 +63,21 @@ git pull origin main --no-edit
 
 git push origin main
 # Pushes the merged changes to the remote repository again
+
+git add logo.png
+# Stages the logo image file to be included in the next commit.
+
+git commit -m "add: logo image for libanux website"
+# Commits the added logo image with a descriptive message.
+
+git push origin main
+# Pushes the new commit (with the image) to the GitHub repository on the main branch.
+
+git add commands.txt
+# Stages the commands.txt file which contains the log of all Git commands used.
+
+git commit -m "docs: add commands.txt with Git command history"
+# Commits the updated commands.txt file with a message indicating it's documentation.
+
+git push origin main
+# Pushes the updated commands.txt to the GitHub repository on the main branch.
