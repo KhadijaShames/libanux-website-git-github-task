@@ -1,83 +1,67 @@
-cd downloads
-# Changes the directory to "downloads"
+First , i opened the search and wrote: git cmd
 
-mkdir libanux-website
-# Creates a new folder named "libanux-website"
+#cd downloads => is used to change the current directory to a folder named "downloads"
 
-cd libanux-website
-# Enters the "libanux-website" directory
+#git --v => to make sure it exists and what its version are
 
-git init
-# Initializes a new Git repository in the current directory
+#git status => to know the condition he is in now
 
-notepad README.md
-# Opens Notepad to create or edit the README.md file
+#mkdir libanux-website => to create a folder
 
-notepad index.html
-# Opens Notepad to create or edit the index.html file
+#cd libanux-website => we have entered the file
 
-git add .
-# Adds all files in the current directory to the staging area
+#git init => the command git init converts any regular folder into a Git project
 
-git commit -m "chore: initial website structure with README and index.html"
-# Commits the staged files with a message describing the changes
+#notepad README.md => you can create a file and open it in Notepad to write or add whatever you want inside ( searched for something similar to nano but for Windows, i could also create it using the touch command)
 
-git config --global user.name "Khadija"
-# Sets the Git global username to "Khadija"
+#notepad index.html => i created another file 
 
-git config --global user.email "khadija@example.com"
-# Sets the Git global email to "khadija@example.com"
+#git add . => this will add the files in the current directory(and subdirectories) to the staging area
 
-git config --list
-# Shows the current Git configuration settings
+#git commit -m "chore: initial website structure with README and index.html" => to commit the changes you've added to the staging area with the message description
 
-git remote add origin https://github.com/KhadijaShames/libanux-website-git-github-task.git
-# Links the local repository to a remote repository on GitHub
+#git config --global user.name "Khadija" => set or change the username 
 
-git branch -M main
-# Renames the current branch to "main"
+#git config --global user.email "khadija@example.com" => set or change the email
 
-git push -u origin main
-# Pushes the committed code to the "main" branch on GitHub and sets upstream tracking
+#git config --list => the command displays all the configuration settings for Git, including user information, editor settings, and other configurations that have been set either globally or locally for the repository
 
-notepad commands.txt
-# Opens Notepad to create or edit the commands.txt file
+#git remote add origin https://github.com/KhadijaShames/libanux-website-git-github-task.gi => the command is used to link your local Git repository to a remote repository (e.g., on GitHub, GitLab, or Bitbucket)
+Here’s the translation of your Git commands and explanations in English:
 
-notepad libanux.html
-# Opens Notepad to create or edit the libanux.html file
+#git branch -M main => renamed the current branch to main
 
-git add libanux.html
-# Adds libanux.html to the staging area
+#git push -u origin main => used when you want to push to the main branch on GitHub for the first time.
 
-git commit -m "feat: add libanux.html with logo and company name"
-# Commits the added libanux.html file with a message
+#notepad commands.txt => created a file named commands.txt in Notepad 
 
-git push origin main
-# Pushes the latest commit to the main branch on GitHub
+#notepad libanux.html => created a file named libanux.html in Notepad
 
-git pull origin main
-# Fetches and merges changes from the remote "main" branch into your local branch
+#git add libanux.html => instead of using ., we specify the exact file (libanux.html) because we only want to add this specific file
 
-git pull origin main --no-edit
-# Pulls from the remote "main" branch and uses the default merge message (no edit)
+#git commit -m "feat: add libanux.html with logo and company name" => saves the changes with a message describing the modification (adding libanux.html with a logo and company name).
 
-git push origin main
-# Pushes the merged changes to the remote repository again
+#git push origin main => used to push changes to the main branch on GitHub
 
-git add logo.png
-# Stages the logo image file to be included in the next commit.
+#git pull origin main => pulled the latest changes from GitHub (for example, changes made to the README file). If a conflict arises, it opened another page, and you resolved it using the next command
 
-git commit -m "add: logo image for libanux website"
-# Commits the added logo image with a descriptive message.
+#git pull origin main --no-edit => this command is used when pulling from main and merging changes without editing the commit message
 
-git push origin main
-# Pushes the new commit (with the image) to the GitHub repository on the main branch.
+#git push origin main => again, used to push changes to the main branch on GitHub
 
-git add commands.txt
-# Stages the commands.txt file which contains the log of all Git commands used.
+#git add logo.png => added the logo.png file to be tracked by Git
 
-git commit -m "docs: add commands.txt with Git command history"
-# Commits the updated commands.txt file with a message indicating it's documentation.
+#git commit -m "add: logo image for libanux website" => committed the addition of the logo image with a descriptive message
 
-git push origin main
-# Pushes the updated commands.txt to the GitHub repository on the main branch.
+#git push origin main => pushed the changes, including the new logo image, to the main branch on GitHub
+
+#git add commands.txt => added the commands.txt file to be tracked by Git
+
+#git commit -m "docs: add commands.txt with Git command history" => Committed the addition of the commands.txt file with a comment describing its content (Git command history)
+
+#git push origin main => pushed the commands.txt file update to the main branch on GitHub
+
+
+
+
+This sequence summarizes the entire process of working with files and committing them to Git, followed by pushing and pulling changes from the remote repository.
