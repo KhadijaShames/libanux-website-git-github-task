@@ -1,0 +1,65 @@
+cd downloads
+# Changes the directory to "downloads"
+
+mkdir libanux-website
+# Creates a new folder named "libanux-website"
+
+cd libanux-website
+# Enters the "libanux-website" directory
+
+git init
+# Initializes a new Git repository in the current directory
+
+notepad README.md
+# Opens Notepad to create or edit the README.md file
+
+notepad index.html
+# Opens Notepad to create or edit the index.html file
+
+git add .
+# Adds all files in the current directory to the staging area
+
+git commit -m "chore: initial website structure with README and index.html"
+# Commits the staged files with a message describing the changes
+
+git config --global user.name "Khadija"
+# Sets the Git global username to "Khadija"
+
+git config --global user.email "khadija@example.com"
+# Sets the Git global email to "khadija@example.com"
+
+git config --list
+# Shows the current Git configuration settings
+
+git remote add origin https://github.com/KhadijaShames/libanux-website-git-github-task.git
+# Links the local repository to a remote repository on GitHub
+
+git branch -M main
+# Renames the current branch to "main"
+
+git push -u origin main
+# Pushes the committed code to the "main" branch on GitHub and sets upstream tracking
+
+notepad commands.txt
+# Opens Notepad to create or edit the commands.txt file
+
+notepad libanux.html
+# Opens Notepad to create or edit the libanux.html file
+
+git add libanux.html
+# Adds libanux.html to the staging area
+
+git commit -m "feat: add libanux.html with logo and company name"
+# Commits the added libanux.html file with a message
+
+git push origin main
+# Pushes the latest commit to the main branch on GitHub
+
+git pull origin main
+# Fetches and merges changes from the remote "main" branch into your local branch
+
+git pull origin main --no-edit
+# Pulls from the remote "main" branch and uses the default merge message (no edit)
+
+git push origin main
+# Pushes the merged changes to the remote repository again
